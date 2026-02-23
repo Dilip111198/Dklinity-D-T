@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Demo | OneCI</title>
+  <style>
+    :root { --brand:#1f445a; --text:#0f172a; --muted:#475569; --line:#d9e4ef; --accent:#66c165; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Manrope","Segoe UI",sans-serif; color:var(--text); background:linear-gradient(135deg,#f6f9fb 0%,#edf4f8 100%); }
+    .wrap { max-width:900px; margin:0 auto; padding:24px 20px 56px; }
+    .topnav { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:18px; }
+    .topnav a { text-decoration:none; font-weight:700; color:#1e3a8a; }
+    .hero { background:linear-gradient(135deg,#1f445a 0%,#19384b 100%); color:#fff; border-radius:16px; padding:30px; }
+    .hero h1 { margin:0; font-size:32px; }
+    .hero p { margin:8px 0 0; color:#dbeafe; }
+    .card { margin-top:18px; background:#fff; border:1px solid var(--line); border-radius:14px; padding:24px; }
+    .form { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+    input, select, textarea { width:100%; padding:10px; border:1px solid #d0d9e8; border-radius:8px; font-family:inherit; font-size:14px; }
+    textarea { grid-column:1 / -1; min-height:100px; }
+    .full { grid-column:1 / -1; }
+    .btn { margin-top:12px; border:none; border-radius:999px; padding:11px 18px; font-weight:800; cursor:pointer; background:var(--accent); color:#0f3d5c; }
+    .note { margin-top:10px; color:var(--muted); font-size:13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topnav">
+      <a href="DKLinITY-Database3.html#top">Home</a>
+      <a href="ai-edge.html">The AI Edge</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="legal.html">Legal</a>
+      <a href="request-demo.html">Request Demo</a>
+    </nav>
+
+    <section class="hero">
+      <h1>Request OneCI Demo</h1>
+      <p>Share your details and send your request directly to dklinity@gmail.com.</p>
+    </section>
+
+    <section class="card">
+      <form class="form" action="mailto:dklinity@gmail.com" method="post" enctype="text/plain">
+        <input name="Full Name" type="text" placeholder="Full Name" required />
+        <input name="Email" type="email" placeholder="Email" required />
+        <input name="Company" type="text" placeholder="Company" required />
+        <input name="Role" type="text" placeholder="Role" required />
+        <select name="Interest" required>
+          <option value="">Interest (Data / API / Platform)</option>
+          <option>Platform</option>
+          <option>API</option>
+          <option>Data</option>
+        </select>
+        <textarea name="Message" placeholder="Message (Optional)"></textarea>
+        <div class="full">
+          <button class="btn" type="submit">Send Request Demo</button>
+        </div>
+      </form>
+      <div class="note">This opens your email app with all filled details addressed to dklinity@gmail.com.</div>
+    </section>
+  </div>
+</body>
+</html>
